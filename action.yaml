@@ -1,0 +1,10 @@
+name: 'Test actions composite'
+inputs:
+  context:
+    default: ${{ toJSON(github) }}
+
+
+runs:
+  using: composite
+  steps:
+  - uses: tjamet/composite-action-test@v1
